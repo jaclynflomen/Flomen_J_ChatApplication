@@ -8,10 +8,9 @@
   },
   "author": "JF",
   "license": "ISC",
-  "devDependencies": {
-    "express": "^4.16.4"
-  },
+  "homepage": "https://github.com/jaclynflomen/Flomen_J_ChatApplication",
   "dependencies": {
-    "socket.io": "^2.2.0"
+    "socket.io": "^2.2.0",
+    "express": "^4.16.4"
   }
 }
