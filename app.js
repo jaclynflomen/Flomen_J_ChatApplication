@@ -15,3 +15,5 @@ app.get('/', (req, res) => {
 http.listen(port, () => {
     console.log(`app is running on port ${port}`);
 });
+
+//socket.io chat app stuff to follow
