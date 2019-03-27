@@ -2,7 +2,7 @@ import ChatMessage from './modules/ChatMessage.js';
 
 const socket = io();
 
-function logConnect(sID, message){ //sID, message
+function logConnect({sID, message}){ //sID, message
     console.log(sID, message);
     vm.socketID = sID;
 }
