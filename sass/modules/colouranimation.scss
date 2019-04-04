@@ -1,4 +1,4 @@
-.colours ul button a {
+.colours button a {
     color: black;
     font-size: 1.25em;
     padding: 0.7em;
@@ -7,16 +7,13 @@
     font-weight: bold;
 }
 
-.colours ul {
+.colours {
     list-style: none;
+    margin-top: 3em;
 }
 
-.colours ul button {
+.colours button {
     display: inline;
     padding: 0.5em;
     border: none;
-}
-
-.colours {
-    margin-top: 3em;
 }

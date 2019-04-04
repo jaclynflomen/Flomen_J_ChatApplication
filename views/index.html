@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<script src="https://unpkg.com/vue"></script> 
 <script>
-		function changeBg(color){
+	function changeBg(color){
 		document.getElementsById("formCont").style.background = color;
 	}
 </script>
@@ -24,12 +24,10 @@
 				<input type="submit" @click.prevent="dispatchMessage">
 			
 				<section class="colours">
-					<ul>
-						<button type="button" onclick="changeBg('yellow');"><a href="">Brick</a></button>
-						<button type="button" onclick="changeBg('red');"><a href="">Wood</a></button>
-						<button type="button" onclick="changeBg('green');"><a href="">Zebra</a></button>
-						<button type="button" onclick="changeBg('blue');"><a href="">Marble</a></button>
-					</ul>
+					<button type="button" onclick="changeBg('yellow');"><a href="">Yellow</a></button>
+					<button type="button" onclick="changeBg('red');"><a href="">Red</a></button>
+					<button type="button" onclick="changeBg('green');"><a href="">Green</a></button>
+					<button type="button" onclick="changeBg('blue');"><a href="">Blue</a></button>
 				</section>
 			
 			</form>
@@ -38,7 +36,6 @@
 		<section class="messages">
 			<ul id="messages" v-for="message in messages">
                 <newmessage :msg="message"></newmessage>
-				
 			</ul>
 		</section>	
 	</main>
