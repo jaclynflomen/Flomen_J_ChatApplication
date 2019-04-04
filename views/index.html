@@ -5,17 +5,33 @@
 	<title>Socket IO Chat with Node!</title>
 	<link rel="stylesheet" href="css/main.css">
 	<script src="https://unpkg.com/vue"></script> 
+<script>
+		function changeBg(color){
+		document.getElementsById("formCont").style.background = color;
+	}
+</script>
+
 </head>
 <body>
 	<main id="app">		
-		<section class="form-container">
-			<label for="nickname">Your Nickname (optional)</label>
+		<section class="form-container" id="formCont">
+			<label for="nickname">Your Name</label>
 			<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
 			
 			<form>
-				<label for="message">Something to say?</label>
+				<label for="message">Your Message</label>
 				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
 				<input type="submit" @click.prevent="dispatchMessage">
+			
+				<section class="colours">
+					<ul>
+						<button type="button" onclick="changeBg('yellow');"><a href="">Brick</a></button>
+						<button type="button" onclick="changeBg('red');"><a href="">Wood</a></button>
+						<button type="button" onclick="changeBg('green');"><a href="">Zebra</a></button>
+						<button type="button" onclick="changeBg('blue');"><a href="">Marble</a></button>
+					</ul>
+				</section>
+			
 			</form>
 		</section>
 		
@@ -24,7 +40,7 @@
                 <newmessage :msg="message"></newmessage>
 				
 			</ul>
-		</section>		
+		</section>	
 	</main>
 	<script src="/socket.io/socket.io.js"></script>
 	<script type="module" src="js/main_vm.js"></script>
