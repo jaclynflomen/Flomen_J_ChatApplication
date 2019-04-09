@@ -6,11 +6,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<script src="https://unpkg.com/vue"></script> 
-<script>
-	function changeBg(color){
-		document.getElementsByClassName("form-container").style.background = color;
-	}
-</script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 </head>
 <body>
@@ -22,25 +18,22 @@
 			<form>
 				<label for="message">Your Message</label>
 				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
-				<input type="submit" @click.prevent="dispatchMessage">
-			
-				<section class="colours">
-					<button type="button" onclick="changeBg('yellow');"><a href="">Yellow</a></button>
-					<button type="button" onclick="changeBg('red');"><a href="">Red</a></button>
-					<button type="button" onclick="changeBg('green');"><a href="">Green</a></button>
-					<button type="button" onclick="changeBg('blue');"><a href="">Blue</a></button>
-				</section>
-			
+				<input type="submit" @click.prevent="dispatchMessage">			
+				
 			</form>
+
+			<a id="moon"><i class="fas fa-moon"></i></a>
 		</section>
-		
+
 		<section class="messages">
 			<ul id="messages" v-for="message in messages">
                 <newmessage :msg="message" class="animated slideInRight"></newmessage>
 			</ul>
 		</section>	
 	</main>
+
 	<script src="/socket.io/socket.io.js"></script>
 	<script type="module" src="js/main_vm.js"></script>
+	<script src="js/darkmode.js"></script>
 </body>
 </html>

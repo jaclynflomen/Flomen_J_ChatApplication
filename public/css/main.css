@@ -66,8 +66,12 @@ form {
   #messages li:nth-child(odd) {
     background: #eee; }
 
+#moon i {
+  font-size: 2.5em;
+  color: black;
+  margin-top: 55%; }
+
 .new-message {
-  animation-duration: 0.5s;
   width: 45%;
   padding: 8px 12px;
   background-color: white;
@@ -85,21 +89,31 @@ form {
   background-color: #86bf9d;
   color: white; }
 
-.colours button a {
-  color: black;
-  font-size: 1.25em;
-  padding: 0.7em;
-  margin-top: 5em;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold; }
-
-.colours {
-  list-style: none;
-  margin-top: 3em; }
-
-.colours button {
-  display: inline;
-  padding: 0.5em;
-  border: none; }
+.darkmode form input[type=submit] {
+  background-color: #000000; }
+.darkmode .form-container {
+  border: 6px solid #252829;
+  background-color: #3e4244; }
+  .darkmode .form-container label {
+    display: block;
+    margin-bottom: 0.5rem; }
+.darkmode .messages {
+  flex: 2;
+  background-color: #14353a;
+  border: 6px solid #000000; }
+.darkmode input, .darkmode textarea {
+  border: 2px solid #828e94; }
+.darkmode #messages li:nth-child(odd) {
+  background: #6e6e6e; }
+.darkmode #moon i {
+  font-size: 2.5em;
+  color: white;
+  margin-top: 55%; }
+.darkmode #nickname, .darkmode #textarea {
+  background-color: #828e94; }
+.darkmode #nickname::placeholder {
+  color: black; }
+.darkmode label {
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */

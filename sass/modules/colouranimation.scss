@@ -1,19 +1,46 @@
-.colours button a {
+.darkmode{
+form {
+	input[type=submit] { 
+		background-color:#000000;
+	}
+}
+
+.form-container { 
+	border: 6px solid #252829;
+	background-color: #3e4244;
+
+	label { display: block; margin-bottom: 0.5rem; }
+}
+
+.messages { 
+	flex: 2;
+	background-color: rgb(20, 53, 58);
+	border: 6px solid #000000; 
+}
+
+input, textarea { 
+	border: 2px solid #828e94;
+	//border-color: #bfcfd6; 
+}
+
+#messages {
+	li:nth-child(odd) { background: rgb(110, 110, 110); }
+}
+
+#moon i {
+	font-size: 2.5em;
+	color: white;
+	margin-top: 55%;
+}
+
+#nickname, #textarea {
+    background-color: #828e94;
+}
+
+#nickname::placeholder{
     color: black;
-    font-size: 1.25em;
-    padding: 0.7em;
-    margin-top: 5em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
 }
 
-.colours {
-    list-style: none;
-    margin-top: 3em;
-}
-
-.colours button {
-    display: inline;
-    padding: 0.5em;
-    border: none;
-}
+label {
+    color: white;
+}}

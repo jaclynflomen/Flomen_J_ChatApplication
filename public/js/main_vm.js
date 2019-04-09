@@ -38,3 +38,4 @@ const vm = new Vue ({
 socket.on('connected', logConnect);
 socket.addEventListener('chat message', appendMessage);
 socket.addEventListener('disconnect', appendMessage);
+

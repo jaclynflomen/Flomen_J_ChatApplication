@@ -67,6 +67,12 @@ form {
 	li:nth-child(odd) { background: #eee; }
 }
 
+#moon i {
+	font-size: 2.5em;
+	color: black;
+	margin-top: 55%;
+}
+
 // imports
 
 @import 'modules/_message';
