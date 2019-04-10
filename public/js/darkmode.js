@@ -1,7 +1,14 @@
-const moon = document.getElementById('moon');
+// window.onload = function resizeMoon() {
+//     var moon = document.getElementById("moon");
+//     TweenLite.to(moon, 2, {fontSize:"0.5em"});
+// }	
+
 
 function addDarkMode(){
-    window.classList.add("darkmode");
+    var body = document.body.classList.add("darkmode");
 }
 
-moon.addEventListener('click', addDarkMode);
+function removeDarkMode(){
+    var body = document.body.classList.remove("darkmode");
+}
+

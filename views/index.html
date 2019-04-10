@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<script src="https://unpkg.com/vue"></script> 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
 </head>
 <body>
@@ -22,7 +23,9 @@
 				
 			</form>
 
-			<a id="moon"><i class="fas fa-moon"></i></a>
+			<a id="moon" href="#" ><i id="moon2" class="fas fa-moon" onclick="addDarkMode()"></i></a>
+			<a id="sun" href="#" ><i id="sun2" class="fas fa-sun" onclick="removeDarkMode()"></i></a>
+
 		</section>
 
 		<section class="messages">
