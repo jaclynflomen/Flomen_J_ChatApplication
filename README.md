@@ -1,6 +1,5 @@
 # Chat App
-MMED 3012
-      
+MMED 3012  
 
 ## Getting Started
 
@@ -24,7 +23,10 @@ Open the index.html in a browser of your choosing. Chrome works best.
 
 * **Jaclyn Flomen** - [jaclynflomen](https://github.com/jaclynflomen)
 
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Inspiration
+
+I got inspiration from Apple products for the changing skin concept. 

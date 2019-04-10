@@ -4,45 +4,39 @@
 	<meta charset="UTF-8">
 	<title>Socket IO Chat with Node!</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<script src="https://unpkg.com/vue"></script> 
-<script>
-		function changeBg(color){
-		document.getElementsById("formCont").style.background = color;
-	}
-</script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
 </head>
 <body>
-	<main id="app">		
-		<section class="form-container" id="formCont">
+	<main id="app">	
+		<section class="form-container">
 			<label for="nickname">Your Name</label>
 			<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
 			
 			<form>
 				<label for="message">Your Message</label>
 				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
-				<input type="submit" @click.prevent="dispatchMessage">
-			
-				<section class="colours">
-					<ul>
-						<button type="button" onclick="changeBg('yellow');"><a href="">Brick</a></button>
-						<button type="button" onclick="changeBg('red');"><a href="">Wood</a></button>
-						<button type="button" onclick="changeBg('green');"><a href="">Zebra</a></button>
-						<button type="button" onclick="changeBg('blue');"><a href="">Marble</a></button>
-					</ul>
-				</section>
-			
+				<input type="submit" @click.prevent="dispatchMessage">			
+				
 			</form>
+
+			<a id="moon" href="#" ><i id="moon2" class="fas fa-moon" onclick="addDarkMode()"></i></a>
+			<a id="sun" href="#" ><i id="sun2" class="fas fa-sun" onclick="removeDarkMode()"></i></a>
+
 		</section>
-		
+
 		<section class="messages">
 			<ul id="messages" v-for="message in messages">
-                <newmessage :msg="message"></newmessage>
-				
+                <newmessage :msg="message" class="animated slideInRight"></newmessage>
 			</ul>
 		</section>	
 	</main>
+
 	<script src="/socket.io/socket.io.js"></script>
 	<script type="module" src="js/main_vm.js"></script>
+	<script src="js/modules/darkmode.js"></script>
 </body>
 </html>
