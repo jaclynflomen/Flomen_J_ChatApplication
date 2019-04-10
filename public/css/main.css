@@ -87,7 +87,8 @@ form {
   .new-message span {
     font-size: 0.8rem;
     display: block;
-    margin-bottom: 2px; }
+    margin-bottom: 2px;
+    text-shadow: 1px 1px black; }
 
 .my-message {
   float: right !important;
@@ -123,6 +124,16 @@ form {
 .darkmode #nickname::placeholder {
   color: black; }
 .darkmode label {
+  color: white; }
+.darkmode .new-message {
+  background-color: black;
+  color: white; }
+  .darkmode .new-message span {
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 2px; }
+.darkmode .my-message {
+  background-color: #446868;
   color: white; }
 
 /*# sourceMappingURL=main.css.map */
