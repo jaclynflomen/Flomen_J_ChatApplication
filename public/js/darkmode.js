@@ -11,4 +11,3 @@ function addDarkMode(){
 function removeDarkMode(){
     var body = document.body.classList.remove("darkmode");
 }
-
