@@ -85,7 +85,7 @@ form {
   float: left;
   clear: both; }
   .new-message span {
-    font-size: 0.8rem;
+    font-size: 1em;
     display: block;
     margin-bottom: 2px;
     text-shadow: 1px 1px black; }
@@ -129,7 +129,6 @@ form {
   background-color: black;
   color: white; }
   .darkmode .new-message span {
-    font-size: 0.8rem;
     display: block;
     margin-bottom: 2px; }
 .darkmode .my-message {
