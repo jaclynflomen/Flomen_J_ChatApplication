@@ -68,11 +68,13 @@ form {
 
 #moon2 {
   font-size: 2.5em;
-  margin-top: 55%; }
+  margin-top: 55%;
+  color: teal; }
 
 #sun2 {
   font-size: 2.5em;
-  margin-top: 55%; }
+  margin-top: 55%;
+  color: teal; }
 
 .new-message {
   width: 45%;
